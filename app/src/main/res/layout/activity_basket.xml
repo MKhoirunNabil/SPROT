@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BasketActivity">
+
+    <ImageView
+        android:id="@+id/backbasket"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/back"/>
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardviewatasbasket"
+        app:layout_constraintStart_toEndOf="@+id/backbasket"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bgsearch">
+
+        <EditText
+            android:id="@+id/telusuribasket"
+            android:layout_width="250dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="#C1BEBE"
+            android:hint="Telusuri"
+            android:textColorHint="@color/black"
+            android:textStyle="italic|bold" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/search"
+            android:layout_gravity="center"
+            android:layout_marginStart="35dp"/>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewatasbasket"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backbasket"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/armanbasket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="35dp"
+            android:text="ARMAN SPORT"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/basket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="70dp"
+            android:text="BOLA BASKET"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="italic"
+            tools:ignore="InvalidId" />
+
+        <ImageView
+            android:id="@+id/vollyatas1"
+            android:layout_width="116dp"
+            android:layout_height="111dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/basket" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerbasket"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardviewatasbasket" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="10dp"
+        android:background="@drawable/bawahmenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/basket"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/basket"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/basket"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

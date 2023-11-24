@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradientloading"
+    tools:context=".EditProfileActivity">
+
+    <ImageView
+        android:id="@+id/imageEdit"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/addimage"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/editNama"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bginput"
+        android:textColorHint="@color/black"
+        android:paddingHorizontal="20dp"
+        android:hint="Input Nama Produk"
+        android:fontFamily="@font/literata"
+        android:inputType="textPersonName"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageEdit"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnsaveprofile"
+        android:layout_width="211dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="24dp"
+        android:background="#352C2C"
+        android:text="Edit Profile"
+        android:textStyle="bold"
+        android:textColor="#C3C0C0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editNama"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

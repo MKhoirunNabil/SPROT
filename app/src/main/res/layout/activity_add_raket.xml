@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/putihhitam"
+    tools:context=".AddRaketActivity">
+
+    <ImageView
+        android:id="@+id/imagePic"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/addimage"
+        tools:ignore="ContentDescription" />
+
+    <EditText
+        android:id="@+id/inputNamaRaket"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bginput"
+        android:textColorHint="@color/black"
+        android:paddingHorizontal="20dp"
+        android:hint="Input Nama Produk"
+        android:fontFamily="@font/literata"
+        android:inputType="textPersonName"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagePic"/>
+
+    <EditText
+        android:id="@+id/inputHargaRaket"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bginput"
+        android:hint="Input Harga Produk"
+        android:inputType="textPersonName"
+        android:paddingHorizontal="20dp"
+        android:textColorHint="@color/black"
+        android:fontFamily="@font/literata"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputNamaRaket"
+        tools:ignore="Autofill,HardcodedText,SpUsage" />
+
+    <EditText
+        android:id="@+id/inputStokRaket"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bginput"
+        android:hint="Input Stok Produk"
+        android:inputType="textPersonName"
+        android:fontFamily="@font/literata"
+        android:paddingHorizontal="20dp"
+        android:textColorHint="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputHargaRaket"
+        tools:ignore="Autofill,HardcodedText,SpUsage" />
+
+    <EditText
+        android:id="@+id/inputDeskRaket"
+        android:layout_width="330dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bginput"
+        android:hint="Input Deskripsi Produk"
+        android:textColorHint="@color/black"
+        android:inputType="textPersonName"
+        android:textSize="14dp"
+        android:gravity="top"
+        android:padding="20dp"
+        android:fontFamily="@font/literata"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputStokRaket"
+        tools:ignore="Autofill,HardcodedText,SpUsage" />
+
+    <ImageView
+        android:id="@+id/backAddRaket"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        app:srcCompat="@drawable/back"
+        tools:ignore="ContentDescription" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnsaveRaket"
+        android:layout_width="211dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="104dp"
+        android:layout_marginTop="24dp"
+        android:background="#352C2C"
+        android:text="Input Produk"
+        android:textStyle="bold"
+        android:textColor="#C3C0C0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputDeskRaket"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

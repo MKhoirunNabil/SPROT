@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SoccerActivity">
+
+    <ImageView
+        android:id="@+id/backbolasepak"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/back"/>
+
+    <LinearLayout
+        android:layout_width="330dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardviewatasbolasepak"
+        app:layout_constraintStart_toEndOf="@+id/backbolasepak"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/bgsearch">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/telusurisepakbola"
+            android:layout_width="300dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="#C1BEBE"
+            android:hint="Telusuri"
+            android:textColorHint="@color/black"
+            android:textStyle="italic|bold"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewatasbolasepak"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backbolasepak"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/armansepak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="35dp"
+            android:text="ARMAN SPORT"
+            android:textColor="@color/white"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/soccer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="70dp"
+            android:text="BOLA SEPAK"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:textStyle="italic"/>
+
+        <ImageView
+            android:id="@+id/sepakatas"
+            android:layout_width="116dp"
+            android:layout_height="111dp"
+            android:layout_marginStart="260dp"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/soccer" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recylerbolasepak"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardviewatasbolasepak" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:paddingHorizontal="10dp"
+        android:background="@drawable/bawahmenu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_weight="1"
+            android:src="@drawable/soccer" />
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/soccer"/>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:src="@drawable/soccer"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

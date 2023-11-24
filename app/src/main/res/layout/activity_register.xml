@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/putihhitam">
+
+    <TextView
+        android:id="@+id/Signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/literata_bold"
+        android:text="Sign -Up"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="@+id/Name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/Name"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:background="@drawable/bginput"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Signup">
+
+        <EditText
+            android:id="@+id/ETNameUP"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/literata"
+            android:hint="Name"
+            android:paddingStart="10dp"
+            android:inputType="textPersonName"
+            android:textColorHint="@color/black"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Email"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="@drawable/bginput"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name">
+
+        <EditText
+            android:id="@+id/ETEmailUP"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/literata"
+            android:hint="Email"
+            android:paddingStart="10dp"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/black"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/PASS"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bginput"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email">
+
+        <EditText
+            android:id="@+id/ETPASSUP"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/literata"
+            android:hint="Password"
+            android:paddingStart="10dp"
+            android:inputType="textWebPassword"
+            android:textColorHint="@color/black"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/KofPASS"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bginput"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/PASS">
+
+        <EditText
+            android:id="@+id/ETKofPASSUP"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/literata"
+            android:hint="Confirm Password"
+            android:inputType="textWebPassword"
+            android:paddingStart="10dp"
+            android:textColorHint="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/PASS"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/showHideCheckBoxSingup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Password"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/KofPASS"
+        app:layout_constraintTop_toBottomOf="@+id/KofPASS"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/BTNSignup"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bginput"
+        android:backgroundTint="#352C2C"
+        android:ems="20"
+        android:fontFamily="@font/literata"
+        android:text="Sign -Up"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/KofPASS"
+        tools:ignore="MissingConstraints" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="@+id/BTNSignup"
+        app:layout_constraintStart_toStartOf="@+id/BTNSignup"
+        app:layout_constraintTop_toBottomOf="@+id/BTNSignup">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:text="Don’t have an Account?"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/BTNSignup"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/BTNSignup"
+            app:layout_constraintTop_toBottomOf="@+id/BTNSignup" />
+
+
+        <TextView
+            android:id="@+id/TXTLOGIN"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:gravity="center"
+            android:text=" Login now"
+            android:textStyle="bold"
+            android:textColor="#3BD8FF"
+            app:layout_constraintEnd_toEndOf="@+id/BTNSignup"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="@+id/BTNSignup"
+            app:layout_constraintTop_toBottomOf="@+id/BTNSignup" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backtologin"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:layout_constraintBottom_toTopOf="@+id/Signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.242"
+        app:srcCompat="@drawable/back" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
